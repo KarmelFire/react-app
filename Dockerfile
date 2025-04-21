@@ -1,7 +1,7 @@
 FROM node:20 AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm config set registry https://registry.npmmirrior.com
+RUN npm config set registry https://registry.npmmirror.com
 RUN npm install
 COPY . .
 RUN npm run build
